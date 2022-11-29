@@ -1,0 +1,23 @@
+SELECT earnings_rank, runtime
+	FROM Movie WHERE name = 'Incredibles 2'
+
+SELECT dob, pob, name
+	FROM Person1 
+		WHERE (name='Lady Gaga' or name='Melissa McCarthy')
+
+SELECT name, year, rating
+	FROM Movie 
+		where year > 2010;
+
+SELECT avg(earnings_rank) 
+FROM Movie WHERE rating = 'PG'
+
+
+SELECT count (type), year
+	FROM Oscar
+		WHERE type <> 6
+GROUP BY year;
+
+SELECT name, runtime
+FROM Movie
+WHERE name = %Star%; ##this is the only one I could not fgure out how to do
